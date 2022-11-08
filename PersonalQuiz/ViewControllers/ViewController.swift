@@ -8,6 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    private let question = Question.getQuestion()
 
     override func viewDidLoad() {
         super.viewDidLoad()

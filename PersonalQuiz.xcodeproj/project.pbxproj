@@ -13,6 +13,7 @@
 		74FA14E72919866C00183C65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FA14E52919866C00183C65 /* Main.storyboard */; };
 		74FA14E92919866D00183C65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74FA14E82919866D00183C65 /* Assets.xcassets */; };
 		74FA14EC2919866D00183C65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FA14EA2919866D00183C65 /* LaunchScreen.storyboard */; };
+		74FA14F429198F4500183C65 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FA14F329198F4500183C65 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		74FA14E82919866D00183C65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74FA14EB2919866D00183C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74FA14ED2919866D00183C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74FA14F329198F4500183C65 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		74FA14DE2919866C00183C65 /* PersonalQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				74FA14DF2919866C00183C65 /* AppDelegate.swift */,
-				74FA14E12919866C00183C65 /* SceneDelegate.swift */,
-				74FA14E32919866C00183C65 /* ViewController.swift */,
-				74FA14E52919866C00183C65 /* Main.storyboard */,
-				74FA14E82919866D00183C65 /* Assets.xcassets */,
-				74FA14EA2919866D00183C65 /* LaunchScreen.storyboard */,
-				74FA14ED2919866D00183C65 /* Info.plist */,
+				74FA14F529198F7B00183C65 /* App */,
+				74FA14F629198F9800183C65 /* ViewControllers */,
+				74FA14F829198FF600183C65 /* Models */,
+				74FA14F729198FD200183C65 /* Storyboards */,
+				74FA14F92919901000183C65 /* Resources */,
 			);
 			path = PersonalQuiz;
+			sourceTree = "<group>";
+		};
+		74FA14F529198F7B00183C65 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				74FA14DF2919866C00183C65 /* AppDelegate.swift */,
+				74FA14E12919866C00183C65 /* SceneDelegate.swift */,
+				74FA14ED2919866D00183C65 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		74FA14F629198F9800183C65 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				74FA14E32919866C00183C65 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		74FA14F729198FD200183C65 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				74FA14E52919866C00183C65 /* Main.storyboard */,
+				74FA14EA2919866D00183C65 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		74FA14F829198FF600183C65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				74FA14F329198F4500183C65 /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		74FA14F92919901000183C65 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				74FA14E82919866D00183C65 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74FA14E42919866C00183C65 /* ViewController.swift in Sources */,
+				74FA14F429198F4500183C65 /* Question.swift in Sources */,
 				74FA14E02919866C00183C65 /* AppDelegate.swift in Sources */,
 				74FA14E22919866C00183C65 /* SceneDelegate.swift in Sources */,
 			);
@@ -302,9 +346,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Maxim-Zhilyaev.PersonalQuiz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +377,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Maxim-Zhilyaev.PersonalQuiz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
